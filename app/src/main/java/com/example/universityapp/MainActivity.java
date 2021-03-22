@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button login, demo;
+    Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         login = findViewById(R.id.btn_goToLogin);
-        demo = findViewById(R.id.btn_demo);
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override

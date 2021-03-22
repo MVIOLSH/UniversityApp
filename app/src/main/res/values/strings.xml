@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">UniversityApp</string>
     <string name="roehampton_university_logo">Roehampton University logo</string>
+    <string name="title_activity_floorplan">Floorplan</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string-array name="library_book_categories">
+        <item>Computing</item>
+        <item>Business</item>
+        <item>Economics</item>
+        <item>Mathematics</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

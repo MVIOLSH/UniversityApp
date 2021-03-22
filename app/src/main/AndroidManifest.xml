@@ -7,9 +7,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="sensorPortrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.UniversityApp">
-        <activity android:name=".Register"></activity>
+        <activity android:name=".SaleBookAdd"></activity>
+        <activity android:name=".SaleBookList" />
+        <activity android:name=".BookSale" />
+        <activity android:name=".Floorplan" />
+        <activity android:name=".ReviewAdd" />
+        <activity android:name=".BookMore" />
+        <activity android:name=".Reviews" />
+        <activity android:name=".LibraryReseravtions" />
+        <activity android:name=".LibraryBooksList" />
+        <activity android:name=".Library_add" />
+        <activity android:name=".Library" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Register" />
         <activity android:name=".Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
