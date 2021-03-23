@@ -44,14 +44,16 @@ public class Login extends AppCompatActivity {
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-                mAuth.signInWithEmailAndPassword(em.getText().toString(), pw.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                    @Override
-                    public void onSuccess(AuthResult authResult) {
-                     //   if (mAuth.getCurrentUser().isEmailVerified() == false) {  Method to verify that user is verified or not. Turned off for test purposes.
-                         //   Toast.makeText(Login.this, "Please verify your email before signing in", Toast.LENGTH_LONG).show();
-                      //  } else {
+            public void onClick(View v)
+            {
+                if(!(em.getText().toString().isEmpty() | pw.getText().toString().isEmpty() | sId.getText().toString().isEmpty()))
+                {
+                    mAuth.signInWithEmailAndPassword(em.getText().toString(), pw.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                        @Override
+                        public void onSuccess(AuthResult authResult) {
+                            //   if (mAuth.getCurrentUser().isEmailVerified() == false) {  Method to verify that user is verified or not. Turned off for test purposes.
+                            //   Toast.makeText(Login.this, "Please verify your email before signing in", Toast.LENGTH_LONG).show();
+                            //  } else {
                             AppSession.Session.authUser = mAuth.getCurrentUser();
                             Query dbref = FirebaseDatabase.getInstance().getReference("_user_")
                                     .orderByKey()
@@ -77,15 +79,22 @@ public class Login extends AppCompatActivity {
                                 }
                             });
                         }
-                   // } Method to verify that user is verified or not. Turned off for test purposes.
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(Login.this, "Login failed, wrong email or password. Please try again", Toast.LENGTH_LONG).show(); // message for wrong email or password.
-                    }
-                });
+                        // } Method to verify that user is verified or not. Turned off for test purposes.
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(Login.this, "Login failed, wrong email or password. Please try again", Toast.LENGTH_LONG).show(); // message for wrong email or password.
+                        }
+                    });
+                }
+                else
+                {
+                    Toast.makeText(Login.this, "Please provide all the details!", Toast.LENGTH_LONG).show();
+
+                }
             }
         });
+
 
         goToRegister.setOnClickListener(new View.OnClickListener() {
             @Override
