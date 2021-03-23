@@ -4,12 +4,24 @@
     <string name="title_activity_floorplan">Floorplan</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+
     <string-array name="library_book_categories">
         <item>Computing</item>
         <item>Business</item>
         <item>Economics</item>
         <item>Mathematics</item>
     </string-array>
+
+    <string-array name="daysweek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

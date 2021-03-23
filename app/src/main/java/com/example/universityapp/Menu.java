@@ -76,6 +76,21 @@ public class Menu extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        forum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Menu.this, ForumMain.class);
+                startActivity(i);
+
+            }
+        });
+        activities.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Menu.this, ActivitiesMain.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
