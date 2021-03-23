@@ -69,6 +69,13 @@ public class Menu extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        bookSale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Menu.this, BookSale.class);
+                startActivity(i);
+            }
+        });
 
     }
 }

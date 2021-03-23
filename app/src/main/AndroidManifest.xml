@@ -10,7 +10,8 @@
         android:screenOrientation="sensorPortrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.UniversityApp">
-        <activity android:name=".SaleBookAdd"></activity>
+        <activity android:name=".SaleBookMore"></activity>
+        <activity android:name=".SaleBookAdd" />
         <activity android:name=".SaleBookList" />
         <activity android:name=".BookSale" />
         <activity android:name=".Floorplan" />

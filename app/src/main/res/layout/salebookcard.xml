@@ -1,7 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="220dp"
     android:background="#009688">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/tv_salecard_price2"
+            android:layout_width="57dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="7dp"
+            android:text="Price:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_salecard_price"
+            app:layout_constraintStart_toEndOf="@+id/btn_salecard_moreDetails"
+            app:layout_constraintTop_toBottomOf="@+id/tv_salecard_description"
+            app:layout_constraintVertical_bias="0.529" />
+
+        <TextView
+            android:id="@+id/tv_salecard_price"
+            android:layout_width="82dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="7dp"
+            android:text="Price"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_salecard_description" />
+
+        <TextView
+            android:id="@+id/tv_salecard_description"
+            android:layout_width="381dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:text="Description"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_salecard_author" />
+
+        <TextView
+            android:id="@+id/tv_salecard_title"
+            android:layout_width="381dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:text="Title"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_salecard_author"
+            android:layout_width="153dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:text="Author"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_salecard_title" />
+
+        <Button
+            android:id="@+id/btn_salecard_moreDetails"
+            android:layout_width="171dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="8dp"
+            android:text="More details"
+            android:textSize="12sp"
+            app:backgroundTint="@color/buttons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_salecard_price"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_salecard_description"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -67,7 +67,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.BooksHolder> {
             more = itemView.findViewById(R.id.btn_library_card_more);
             this.listener = _listener;
             more.setOnClickListener( this);
-
         }
 
         public interface OnCardClickListener
